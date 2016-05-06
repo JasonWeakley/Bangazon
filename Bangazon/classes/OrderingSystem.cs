@@ -35,18 +35,18 @@ namespace Bangazon.classes
                     case "1":
                         CreateAccount();
                         break;
-                    //case "2":
-                    //    CreatePaymentOption();
-                    //    break;
-                    //case "3":
-                    //    OrderProducts();
-                    //    break;
-                    //case "4":
-                    //    CompleteOrder();
-                    //    break;
-                    //case "5":
-                    //    SeeProductPopularity();
-                    //    break;
+                    case "2":
+                        CreatePaymentOption();
+                        break;
+                        //case "3":
+                        //    OrderProducts();
+                        //    break;
+                        //case "4":
+                        //    CompleteOrder();
+                        //    break;
+                        //case "5":
+                        //    SeeProductPopularity();
+                        //    break;
                 }
                 userInput = Console.ReadLine();
             }
@@ -73,6 +73,24 @@ namespace Bangazon.classes
             _newSQLdata.CreateCustomer(newCust);
         }
 
+        public Customer ChooseCustomer()
+        {
+            Customer selectedCustomer = null;
+
+            // need a method that calls all customers from the database and stores them in a list
+            List<Customer> allCustomers = _newSQLdata.getAllCustomers();
+
+            // loop through the list and display it to the console
+            for ()
+
+            return selectedCustomer;
+        }
+
+        public void CreatePaymentOption()
+        {
+            Console.WriteLine("Which customer?");
+            Customer customer = ChooseCustomer();
+        }
 
 
 
