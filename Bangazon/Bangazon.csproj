@@ -58,6 +58,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\Customer.cs" />
+    <Compile Include="classes\OrderingSystem.cs" />
+    <Compile Include="classes\Payment.cs" />
+    <Compile Include="classes\ProductPopularity.cs" />
+    <Compile Include="classes\SQLData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -65,12 +70,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database1.mdf">
+    <Content Include="Bangazon.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Database1_log.ldf">
+    <Content Include="Bangazon_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database1.mdf</DependentUpon>
+      <DependentUpon>Bangazon.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
