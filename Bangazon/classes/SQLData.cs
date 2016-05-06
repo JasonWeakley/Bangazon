@@ -32,5 +32,35 @@ namespace Bangazon.classes
             cmd.ExecuteNonQuery();
             _SQLconnector.Close();
         }
+
+        public List<Customer> getAllCustomers()
+        {
+            List<Customer> listOfAllCustomers = null;
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = "SELECT * FROM Customer";
+            cmd.Connection = _SQLconnector;
+
+            _SQLconnector.Open();
+            using (SqlDataReader DataReader = cmd.ExecuteReader())
+            {
+                while (DataReader.Read())
+                {
+                    Customer customer = new Customer();
+                    customer.IdCustomer = DataReader.GetInt32(0);
+                    customer.FirstName = DataReader.GetString(1);
+                    customer.LastName = DataReader.GetString(2);
+                    customer.StreetAddress = DataReader.GetString(3);
+                    customer.City = DataReader.GetString(4);
+                    customer.StateProvince = DataReader.GetString(5);
+                    customer.PostalCode = DataReader.GetString(6);
+                    customer.PhoneNumber = DataReader.GetString(7);
+                    listOfAllCustomers.Add(customer);
+                }
+            }
+            _SQLconnector.Close();
+            return listOfAllCustomers;
+        }
     }
 }
