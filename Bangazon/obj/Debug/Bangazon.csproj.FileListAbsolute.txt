@@ -1,1 +1,8 @@
 c:\users\jason\documents\visual studio 2015\Projects\Bangazon\Bangazon\bin\Debug\Bangazon.exe.config
+c:\Users\Jason\documents\visual studio 2015\Projects\Bangazon\Bangazon\bin\Debug\Bangazon.exe
+c:\Users\Jason\documents\visual studio 2015\Projects\Bangazon\Bangazon\bin\Debug\Bangazon.pdb
+c:\Users\Jason\documents\visual studio 2015\Projects\Bangazon\Bangazon\obj\Debug\Bangazon.csprojResolveAssemblyReference.cache
+c:\Users\Jason\documents\visual studio 2015\Projects\Bangazon\Bangazon\obj\Debug\Bangazon.exe
+c:\Users\Jason\documents\visual studio 2015\Projects\Bangazon\Bangazon\obj\Debug\Bangazon.pdb
+C:\Users\Jason\Documents\Visual Studio 2015\Projects\Bangazon\Bangazon\bin\Debug\Bangazon.mdf
+C:\Users\Jason\Documents\Visual Studio 2015\Projects\Bangazon\Bangazon\bin\Debug\Bangazon_log.ldf
