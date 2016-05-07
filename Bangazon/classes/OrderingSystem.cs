@@ -81,9 +81,21 @@ namespace Bangazon.classes
             List<Customer> allCustomers = _newSQLdata.getAllCustomers();
 
             // loop through the list and display it to the console
-            for ()
+            int count = 0;
+            foreach (Customer customer in allCustomers)
+            {
+                count += 1;
+                Console.WriteLine("{0} {1}", customer.FirstName, customer.LastName);
+            }
+
+
 
             return selectedCustomer;
+        }
+
+        private static void Print(string s)
+        {
+            Console.WriteLine(s);
         }
 
         public void CreatePaymentOption()
