@@ -35,6 +35,8 @@ namespace Bangazon.classes
 
         public List<Customer> getAllCustomers()
         {
+            // the only thing this entore method does is collect the information
+            // this information needs to be set equal to a variable elsewhere
             List<Customer> listOfAllCustomers = null;
 
             SqlCommand cmd = new SqlCommand();
@@ -45,7 +47,7 @@ namespace Bangazon.classes
             _SQLconnector.Open();
             using (SqlDataReader DataReader = cmd.ExecuteReader())
             {
-                while (DataReader.Read())
+                while (DataReader.Read()) // while there is data to read in the database
                 {
                     Customer customer = new Customer();
                     customer.IdCustomer = DataReader.GetInt32(0);
