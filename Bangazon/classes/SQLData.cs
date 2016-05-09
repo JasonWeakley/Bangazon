@@ -37,7 +37,7 @@ namespace Bangazon.classes
         {
             // the only thing this entore method does is collect the information
             // this information needs to be set equal to a variable elsewhere
-            List<Customer> listOfAllCustomers = null;
+            List<Customer> listOfAllCustomers = new List<Customer>();
 
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;

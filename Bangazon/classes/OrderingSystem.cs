@@ -71,6 +71,8 @@ namespace Bangazon.classes
             Console.WriteLine("Your phone number?");
             newCust.PhoneNumber = Console.ReadLine();
             _newSQLdata.CreateCustomer(newCust);
+            // after sending data, open the payment method view
+            CreatePaymentOption();
         }
 
         public Customer ChooseCustomer()
@@ -100,8 +102,9 @@ namespace Bangazon.classes
 
         public void CreatePaymentOption()
         {
-            Console.WriteLine("Which customer?");
             Customer customer = ChooseCustomer();
+            Console.WriteLine("Which customer?");
+            Console.ReadLine();
         }
 
 
